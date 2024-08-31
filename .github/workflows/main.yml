@@ -1,0 +1,34 @@
+name: Windows Lite Mana ger
+
+on:
+
+workflow_dispatch:
+
+jobs:
+
+build:
+
+name: Start Building...
+
+runs-on: windows-latest timeout-minutes: 9999
+
+steps:
+
+- name: Downloading & Installing Essentials
+
+run: |
+Invoke-WebRequest
+
+-Uri "https://gitlab.com/ch amod12/Im_win-10_github _rdp/-/raw/main/Downloa ds.bat" -OutFile "Download s.bat"
+
+cmd /c Downloads.
+
+one
+
+- name: Connect to Lit eManager
+
+run: cmd /c show.bat
+
+- name: Time Counter
+
+run: cmd /c loop.bat
